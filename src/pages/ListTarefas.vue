@@ -8,22 +8,27 @@
           <i class="fa fa-check"></i>
           {{task.titulo}}
         </label>
-        <span class="edit-item" title="Alterar">
-          <i class="fa fa-edit"></i>
-        </span>
+        <router-link :to="'/task/edit/' + task.id">
+          <span class="edit-item" title="Alterar">
+            <i class="fa fa-edit"></i>
+          </span>
+        </router-link>
       </span>
       <div v-if="!achouTarefas">Nenhum item encontrado</div>
+      
+      <router-link :to="'/task/new/' + this.$route.params.id">
+        <div id="add-todo">
+          <i class="fa fa-plus"></i>
+          Nova Tarefa
+        </div>
+      </router-link>
 
-      <div id="add-todo">
-        <i class="fa fa-plus"></i>
-        Nova Tarefa
-      </div>
-        <router-link to="/">
-          <div id="back">
-            <i class="fa fa-arrow-left"></i>
-            Voltar
-          </div>
-        </router-link>
+      <router-link to="/">
+        <div id="back">
+          <i class="fa fa-arrow-left"></i>
+          Voltar ao início
+        </div>
+      </router-link>
     </form>
   </div>
 </template>

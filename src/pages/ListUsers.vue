@@ -7,10 +7,12 @@
           <span class="user">{{user.nome}}</span>
         </router-link>
       </div>
-      <div id="add-todo">
-        <i class="fa fa-plus"></i>
-        Adicionar usuario
-      </div>
+      <router-link to="/user/new"> 
+        <div id="add-todo">
+          <i class="fa fa-plus"></i>
+          Adicionar usuario
+        </div>
+      </router-link>
     </div>
   </div>
 </template>
