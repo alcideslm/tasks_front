@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1><i class="fa fa-check"></i>Lista de tarefas</h1>
+    <h1><i class="fa fa-check"></i>Lista de tarefas - Usuários</h1>
     <div id="todo-list" >
       <div v-for="(user, i) in users" v-bind:key="i">
         <router-link :to="'/user/' + user.id">
