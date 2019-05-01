@@ -81,10 +81,11 @@ a {
 
 .user {
   padding-bottom: 5px;
+  padding-top: 7px;
   cursor: pointer;
 }
 
-.todo-wrap:last-of-type, .user:last-of-type {
+.todo-wrap:last-of-type {
 /*box-shadow*/
 -webkit-box-shadow:none;
     -moz-box-shadow:none;
@@ -182,9 +183,9 @@ left:-25px;
   color:#0eb0b7;
 }
 
-/* Delete Items */
+/* Edit Items */
   
-.delete-item{
+.edit-item{
   display:block;
   position:absolute;
   height:36px;
@@ -196,11 +197,11 @@ left:-25px;
   color:#d8d8d8;
   opacity:0;
 }
-  .todo-wrap:hover .delete-item{
+  .todo-wrap:hover .edit-item{
   opacity:1;
 }
-  .delete-item:hover{
-  color:#cd4400;
+  .edit-item:hover{
+  color:#354fe7;
 }
 
 /* Add Items */
@@ -211,6 +212,15 @@ left:-25px;
   font-weight:200;
   color:#6bc569;
   display:inline-block;
+  cursor:pointer;
+}
+
+#back{
+  padding:12px 0 0 0;
+  font-size:14px;
+  font-weight:200;
+  color:#f13333;
+  /* display:inline-block; */
   cursor:pointer;
 }
 
