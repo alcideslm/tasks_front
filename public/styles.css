@@ -30,6 +30,11 @@ h1 .fa-check{
   color:#0eb0b7;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 #todo-list{
   width:500px;
   margin:0 auto 50px auto;
